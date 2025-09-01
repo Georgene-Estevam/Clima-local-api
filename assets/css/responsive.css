@@ -1,0 +1,17 @@
+@media screen and (max-width: 570px){
+    footer {
+        padding: 20px 2%;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p, footer img {
+        text-align: center;
+        margin: 20px 1%;
+    }
+}

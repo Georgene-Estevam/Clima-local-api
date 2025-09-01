@@ -1,0 +1,163 @@
+/* style.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.cliear {
+    clear: both;
+}
+div.container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    background-color: #4A90E2;
+    padding: 20px 0;
+    border-bottom: 4px solid #fff;
+}
+
+
+header img {
+    margin: 0;
+    width: 60px;
+    padding-left: 20px;
+}
+
+header p {
+    display: inline-block;
+    font-size: 23px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    display: inline;
+    position: relative;
+    top: -10px;
+}
+
+section.consultar-clima{
+    padding: 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+.consultar-clima h1 {
+    display: inline-block;
+}
+
+.cards-clima p {
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+}
+
+input {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 19px;
+    box-shadow: 1px 1px 6px;
+    /*background-color: #6589a0;*/
+    background-color: #a7caf1;
+    letter-spacing: 1px;
+    
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0, 0.8);
+}
+
+input:focus {
+    background-color: #4A90E2;
+    color: #fff;
+    transition: 0.6s;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+    width: 100%;
+    max-width: 80px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px;
+}
+
+div.cards-contents h2 {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+div.cards-contents {
+    border: 2px solid #000;
+    border-radius: 20px;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+/*div.cards-contents p {
+    padding: 35px 10px 0 10px;
+    border-bottom: 1px dashed #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+}
+
+div.cards-contents p:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #0f2446;
+    color: #fff;
+}
+
+div.cards-contents span {
+    font-weight: normal;
+}*/
+
+.info-cards{
+    border: 1px solid #999999;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    margin: 7px;
+    box-shadow: 4px 4px 6px #a7caf1;
+}
+
+.info-cards p {
+    margin: 0 2%;
+}
+
+footer{
+    /*background-color: #e7e7e7;*/
+    background-color: #4A90E2;
+    color: #000;
+    font-size: 17px;
+    padding: 60px 2%;
+
+}
+
+footer p{
+    padding: 10px;
+    font-weight: 500;
+    display: inline;
+}
+
+footer a {
+    color: #000;
+    display: inline;
+    text-decoration: none;
+    font-style: italic;
+    margin-left: 3px;
+}
+
+footer img{
+    float: right;
+}

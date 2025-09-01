@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Local</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <img src="./assets/img/atmospheric-conditions.png" alt="Imagem da logo do site clima local">
+        <p>Clima local</p>
+    </div><!--.container-->
+</header>
+
+<!--==========================Início section.consultar-clima========================-->
+<section class="consultar-clima">
+    <div class="container">
+        <input type="search" id="cidade" placeholder="Consulte o clima de sua cidade">
+        <div id="autocomplete-list" class="autocomplete-list"></div>
+        <button onclick="buscarClima()">Buscar</button>
+
+
+        <div class="cards-contents">
+            <h2>
+                <span id="local"></span>
+                <span id="regiao"></span>
+                <span id="pais"></span>
+            </h2>
+
+            <div class="info-cards">
+                <p>Temperatura: <span id="resultadoTemp"></span></p>
+                <img src="./assets/img/temperature.png" alt="Ícone de temperatura">
+            </div><!--.info-cards-->
+
+            <div class="info-cards">
+                <p>Clima: <span id="condition"></span></p>
+            </div><!--.info-cards-->
+
+            <div class="info-cards">
+                <p>Velocidade do vento: <span id="velocidadeVento"></span></p>
+                <img src="./assets/img/speed wind.png" alt="Ícone de velocidade do vento" width="60px" style="padding: 10px;"> 
+            </div><!--.info-cards-->
+
+            <!--<p>Temperatura em fahrenheit: <span id="fahrenheit"></span></p>-->
+            
+            <div class="info-cards">
+                <p>Umidade do ar: <span id="umidade"></span></p>
+                <img src="./assets/img/humidity.png" alt="Ícone de umidade do ar" width="55px">
+            </div><!--.info-cards-->
+        </div><!--.cards-contents-->
+
+        <div id="resultado">
+        </div><!--.resultado-->
+
+    </div><!--.container-->
+</section>
+<!--==========================Fim section.consultar-clima========================-->
+
+<!--==========================Início do Footer========================-->
+<footer>
+    
+<div class="container">
+        <p>Desenvolvido com suporte da API:<a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank"> WeatherAPI.com</a></p>
+
+        <a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0"></a>
+
+
+        <div class="clear"></div>
+</div><!--.container-->
+</footer>
+  <!--==========================Fim do Footer========================-->
+
+  <script src=""></script>
+  <script src="consulta.js"></script>
+  <script src="./searchCity.js"></script>
+</body>
+</html>
