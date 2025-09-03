@@ -19,7 +19,8 @@ async function buscarClima() {
 
       document.getElementById("resultadoTemp").innerHTML = `${current.temp_c}°C`
       /*document.getElementById("fahrenheit").innerHTML = `${current.temp_f}°F`*/
-      document.getElementById("condition").innerHTML = `${current.condition.text} <img src="https:${current.condition.icon}" alt="Ícone do clima">`
+      document.getElementById("condition").innerHTML = `${current.condition.text}`
+      document.getElementById("conditionIcon").innerHTML = `<img src="https:${current.condition.icon}" alt="Ícone do clima">`
       document.getElementById("velocidadeVento").innerHTML = `${current.wind_kph}Km/h`
       document.getElementById("umidade").innerHTML = `${current.humidity}%`
       

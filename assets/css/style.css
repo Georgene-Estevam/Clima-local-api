@@ -8,7 +8,7 @@ div.cliear {
     clear: both;
 }
 div.container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: "Work Sans", sans-serif;
 }
@@ -22,13 +22,13 @@ header {
 
 header img {
     margin: 0;
-    width: 60px;
-    padding-left: 20px;
+    width: 84px;
+    padding-left: 30px;
 }
 
 header p {
     display: inline-block;
-    font-size: 23px;
+    font-size: 21px;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
     display: inline;
@@ -42,49 +42,87 @@ section.consultar-clima{
     text-align: center;
 }
 
-.consultar-clima h1 {
-    display: inline-block;
-}
-
-.cards-clima p {
-    font-weight: bold;
-    display: inline-block;
-    margin: 5px;
-}
-
-input {
+.autocomplete-container{
+    padding: 40px 0;
     max-width: 400px;
     width: 100%;
+}
+
+input#cidade {
+    max-width: 350px;
+    width: 100%;
     border: 1px solid #000;
-    font-size: 19px;
+    font-size: 18px;
     box-shadow: 1px 1px 6px;
     /*background-color: #6589a0;*/
     background-color: #a7caf1;
     letter-spacing: 1px;
-    
+    display: inline;
 }
 
-input::placeholder {
+input#cidade::placeholder {
     color: rgb(0, 0, 0, 0.8);
 }
 
-input:focus {
+input#cidade:focus {
     background-color: #4A90E2;
     color: #fff;
     transition: 0.6s;
 }
 
-input, button {
+input#cidade {
   padding: 10px;
-  margin: 10px;
+  margin: 10px 2%;
+}
+
+.autocomplete-container{
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-list{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 70%;
+    left: 25px;
+    right: 0;
+    max-width: 350px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.autocomplete-list-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #081325;
+}
+
+.autocomplete-list-item:hover {
+    background-color: #a7caf1;
 }
 
 button {
+    padding: 10px;
+    margin: 10px;
     width: 100%;
-    max-width: 80px;
+    max-width: 100px;
+    border-radius: 10px;
     height: 45px;
     cursor: pointer;
-    box-shadow: 1px 1px 6px;
+    display: inline;
+    background-color: #4A90E2;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #a7caf1;
+    transition: 0.4s;
 }
 
 div.cards-contents h2 {
@@ -101,38 +139,24 @@ div.cards-contents {
     padding: 5px;
 }
 
-/*div.cards-contents p {
-    padding: 35px 10px 0 10px;
-    border-bottom: 1px dashed #000;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: left;
-}
-
-div.cards-contents p:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    background-color: #0f2446;
-    color: #fff;
-}
-
-div.cards-contents span {
-    font-weight: normal;
-}*/
-
 .info-cards{
     border: 1px solid #999999;
     padding: 10px;
     border-radius: 20px;
     display: flex;
-    align-items: end;
-    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
     margin: 7px;
     box-shadow: 4px 4px 6px #a7caf1;
 }
 
 .info-cards p {
-    margin: 0 2%;
+    margin: 0 2% 0 1%;
+    font-weight: bold;
+}
+
+.info-cards span {
+    font-weight: normal;
 }
 
 footer{

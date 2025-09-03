@@ -27,8 +27,11 @@
 <!--==========================Início section.consultar-clima========================-->
 <section class="consultar-clima">
     <div class="container">
-        <input type="search" id="cidade" placeholder="Consulte o clima de sua cidade">
-        <div id="autocomplete-list" class="autocomplete-list"></div>
+        <div class="autocomplete-container">
+            <input type="search" id="cidade" placeholder="Consulte o clima de sua cidade">
+            <div id="autocomplete-list" class="autocomplete-list"></div>
+        </div><!--.autocomplete-container-->
+        
         <button onclick="buscarClima()">Buscar</button>
 
 
@@ -46,6 +49,7 @@
 
             <div class="info-cards">
                 <p>Clima: <span id="condition"></span></p>
+                <span id="conditionIcon"></span>
             </div><!--.info-cards-->
 
             <div class="info-cards">
@@ -57,7 +61,7 @@
             
             <div class="info-cards">
                 <p>Umidade do ar: <span id="umidade"></span></p>
-                <img src="./assets/img/humidity.png" alt="Ícone de umidade do ar" width="55px">
+                <img src="./assets/img/humidity.png" alt="Ícone de umidade do ar" width="52px">
             </div><!--.info-cards-->
         </div><!--.cards-contents-->
 
