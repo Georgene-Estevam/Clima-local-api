@@ -1,4 +1,4 @@
-const apiKey = 'b2f4046af3384b2896c152521251508'; // Substitua pela sua chave da API
+const apiKey = 'b2f4046af3384b2896c152521251508';
         const cityInput = document.getElementById('cidade'); //Usa document.getElementById para selecionar o elemento HTML com o ID "city-input".
         const autocompleteList = document.getElementById('autocomplete-list'); //Seleciona o elemento HTML com o ID "autocomplete-list".
 

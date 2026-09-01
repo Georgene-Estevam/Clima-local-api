@@ -3,14 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
-div.cliear {
-    clear: both;
-}
+
 div.container {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: "Work Sans", sans-serif;
+    padding: 0 4%;
 }
 
 header {
@@ -20,32 +19,34 @@ header {
 }
 
 
-header img {
+header img.logo {
     margin: 0;
-    width: 84px;
-    padding-left: 30px;
+    width: 52px;
+    padding: 0 2%;
 }
 
 header p {
-    display: inline-block;
-    font-size: 21px;
+    font-size: 18px;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
-    display: inline;
-    position: relative;
-    top: -10px;
+    display: inline-block;
 }
 
 section.consultar-clima{
-    padding: 20px;
     background-color: #e7e7e7;
     text-align: center;
 }
 
-.autocomplete-container{
-    padding: 40px 0;
-    max-width: 400px;
-    width: 100%;
+.banner {
+    background-image: url(../img/pexels-serenakoi-final-de-tarde.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 360px;
+}
+
+.search-container{
+    padding: 40px 5%;
 }
 
 input#cidade {
@@ -57,7 +58,7 @@ input#cidade {
     /*background-color: #6589a0;*/
     background-color: #a7caf1;
     letter-spacing: 1px;
-    display: inline;
+    padding: 10px;
 }
 
 input#cidade::placeholder {
@@ -70,14 +71,8 @@ input#cidade:focus {
     transition: 0.6s;
 }
 
-input#cidade {
-  padding: 10px;
-  margin: 10px 2%;
-}
-
-.autocomplete-container{
+.container-autocomplete-list {
     position: relative;
-    display: inline-block;
 }
 
 .autocomplete-list{
@@ -86,10 +81,9 @@ input#cidade {
     border-bottom: none;
     border-top: none;
     z-index: 99;
-    top: 70%;
-    left: 25px;
+    top: 10%;
+    left: 0px;
     right: 0;
-    max-width: 350px;
     max-height: 200px;
     overflow-y: auto;
 }
@@ -106,12 +100,11 @@ input#cidade {
 }
 
 button {
-    padding: 10px;
-    margin: 10px;
+    margin: 40px 10px;
     width: 100%;
     max-width: 100px;
     border-radius: 10px;
-    height: 45px;
+    height: 43px;
     cursor: pointer;
     display: inline;
     background-color: #4A90E2;
@@ -132,31 +125,88 @@ div.cards-contents h2 {
 
 div.cards-contents {
     border: 2px solid #000;
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: 500px;
     height: auto;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 5px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .info-cards{
     border: 1px solid #999999;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px #a7caf1;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.info-cards-titulo {
+    border-bottom: 1px solid #999999;
+    background: none;
+    padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 7px;
-    box-shadow: 4px 4px 6px #a7caf1;
 }
 
 .info-cards p {
-    margin: 0 2% 0 1%;
+    margin: 0;
     font-weight: bold;
+    font-size: 16px;
+}
+
+.resposta-consulta {
+    padding: 20px 0;
 }
 
 .info-cards span {
-    font-weight: normal;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.dados-consulta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+.dados-direcao-vento-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dados-direcao-vento-wrapper span {
+    padding: 0;
+}
+
+#condition {
+    font-size: 20px;
+    padding: 0;
+}
+
+.speed-wind {
+    width: 40px;
+}
+
+.humidity-icon {
+    width: 48px;
+}
+
+#umidade {
+    font-size: 65px;
+    padding: 20px 0;
 }
 
 footer{
@@ -165,7 +215,9 @@ footer{
     color: #000;
     font-size: 17px;
     padding: 60px 2%;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer p{
@@ -180,8 +232,4 @@ footer a {
     text-decoration: none;
     font-style: italic;
     margin-left: 3px;
-}
-
-footer img{
-    float: right;
 }
