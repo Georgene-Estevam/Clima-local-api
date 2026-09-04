@@ -103,10 +103,108 @@
                     <span id="umidade"></span>
             </div><!--.info-cards-->
         </div><!--.cards-contents-->
-
     </div><!--.container-->
 </section>
 <!--==========================Fim section.consultar-clima========================-->
+
+<!--==========================Início section.consultar-qualidade-do-ar========================-->
+<section class="consultar-qualidade-do-ar">
+    <div class="container">
+        <div class="container-qualidade-do-ar">
+            <div class="titulo-qualidade-do-ar">
+                <h3>Qualidade do ar</h3>
+                <p>Resultado: </p>
+            </div>
+
+            <div class="container-card-poluente">
+                <div class="card-poluente">
+                <div class="poluente">
+                    <p>PM <sup>2.5</sup></p>
+                </div>
+
+                <div class="significado-poluente">
+                    <p>Partículas inaláveis finas são partículas poluentes inaláveis com um diâmetro de menos de 2,5 micrômetros que podem entrar nos pulmões e na corrente sanguínea, resultando em graves problemas de saúde. Os impactos mais graves acontecem nos pulmões e no coração. Exposição às partículas finas pode resultar em tosse ou dificuldade de respiração, agravação da asma e o desenvolvimento de doenças respiratórias crônicas.</p>
+                </div>
+
+                <div class="resultado-poluente">
+                    <span id="pm2_5"></span>
+                </div>
+            </div><!--card-poluente-->
+
+            <div class="card-poluente">
+                <div class="poluente">
+                    <p>PM <sup>10</sup></p>
+                </div>
+
+                <div class="significado-poluente">
+                    <p>Material particulado são partículas poluentes inaláveis com um diâmetro de menos de 10 micrômetros. Partículas maiores de 2,5 micrômetros podem ser depositadas em vias respiratórias, resultando em complicações de saúde. A exposição às partículas pode causar irritação nos olhos e na garganta, tosse ou dificuldade de respiração, além de agravação da asma. Exposição mais frequente e excessiva pode resultar em problemas de saúde mais graves</p>
+                </div>
+
+                <div class="resultado-poluente">
+                    <span id="pm10"></span>
+                </div>
+            </div><!--card-poluente-->
+
+            <div class="card-poluente">
+                <div class="poluente">
+                    <p>O<sup>3</sup> (Ozônio)</p>
+                </div>
+
+                <div class="significado-poluente">
+                    <p>Ozônio ao nível do solo pode agravar doenças respiratórias existentes, além de induzir dores de garganta, dores de cabeça e dor no peito.</p>
+                </div>
+
+                <div class="resultado-poluente">
+                    <span id="o3"></span>
+                </div>
+            </div><!--card-poluente-->
+
+            <div class="card-poluente">
+                <div class="poluente">
+                    <p>NO<sub>2</sub> (Dióxido de Nitrogênio)</p>
+                </div>
+
+                <div class="significado-poluente">
+                    <p>Respirar altos níveis de dióxido de nitrogênio aumenta os riscos de problemas respiratórios. Tosse e dificuldade de respiração são comuns e outros problemas de saúde mais graves, como infecções respiratórias, podem ocorrer no caso de exposição prolongada.</p>
+                </div>
+
+                <div class="resultado-poluente">
+                    <span id="no2"></span>
+                </div>
+            </div><!--card-poluente-->
+
+            <div class="card-poluente">
+                <div class="poluente">
+                    <p>SO<sub>2</sub> (Dióxido de Enxofre)</p>
+                </div>
+
+                <div class="significado-poluente">
+                    <p>Exposição ao dióxido de enxofre pode trazer irritações aos olhos e garganta, além de agravar a asma e a bronquite crônica.</p>
+                </div>
+
+                <div class="resultado-poluente">
+                    <span id="so2"></span>
+                </div>
+            </div><!--card-poluente-->
+
+            <div class="card-poluente">
+                <div class="poluente">
+                    <p>CO (Monóxido de Carbono)</p>
+                </div>
+
+                <div class="significado-poluente">
+                    <p>O monóxido de carbono é um gás incolor e inodoro que, quando inalado em grande quantidade, pode causar dor de cabeça, náusea, tontura e vômito. Exposição recorrente a longo prazo pode causar doenças cardíacas.</p>
+                </div>
+
+                <div class="resultado-poluente">
+                    <span id="co"></span>
+                </div>
+            </div><!--card-poluente-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--==========================Fim section.consultar-qualidade-do-ar========================-->
 
 <!--==========================Início do Footer========================-->
 <footer>
@@ -124,5 +222,6 @@
 
   <script defer src="consulta.js"></script>
   <script defer src="./searchCity.js"></script>
+  <script defer src="./exibirQualidadeDoAr.js"></script>
 </body>
 </html>
