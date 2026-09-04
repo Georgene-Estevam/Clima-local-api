@@ -209,6 +209,42 @@ div.cards-contents {
     padding: 20px 0;
 }
 
+.container-qualidade-do-ar {
+    border: 1px solid #c0c0c0;
+}
+
+.titulo-qualidade-do-ar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container-card-poluente {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-poluente {
+    border-top: 2px solid #c0c0c0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.poluente p, .resultado-poluente span {
+    font-size: 20px;
+}
+
+.significado-poluente p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 8px 0;
+}
+
 footer{
     /*background-color: #e7e7e7;*/
     background-color: #4A90E2;
