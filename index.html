@@ -29,83 +29,140 @@
 <section class="consultar-clima">
     <div class="banner">
         <div class="search-container">
-            <input type="search" id="cidade" placeholder="Consulte o clima de sua cidade">
+            <input type="search" id="cidade" placeholder="Consultar clima aqui">
             <div class="container-autocomplete-list">
                 <div id="autocomplete-list" class="autocomplete-list"></div>
             </div>
             <button onclick="buscarClima()">Buscar</button>
         </div><!--.autocomplete-container-->
     </div><!--.banner-->
+</section>
+<!--==========================Fim section.consultar-clima========================-->
 
+<section class="cards-details">
     <div class="container">
-        <div class="cards-contents">
+        <div class="container-clima">
             <h2>
                 <span id="local"></span>
                 <span id="regiao"></span>
                 <span id="pais"></span>
+                <br>
+                <span id="horario-dados-atualizado"></span>
+
 
                 <div id="resultado"></div>
             </h2>
 
-            <div class="info-cards">
-                <header class="info-cards-titulo">
-                    <p>Temperatura: </p>
-                    <img src="./assets/img/temperature.png" alt="Ícone de temperatura">
-                </header>
+            <div class="clima-e-condicao">
+                <p>Temperatura:</p>
+                <span id="resultado-Temp-Celsius"></span>
 
-                <div class="resposta-consulta">
-                    <div class="dados-consulta-wrapper">
-                        <span id="resultado-Temp-Celsius"></span>
-                        <span id="resultado-Temp-Fahrenheit"></span>
-                    </div>
-                </div>
-            </div><!--.info-cards-->
-
-            <div class="info-cards">
-                <header class="info-cards-titulo">
-                    <p>Clima: </p>
-                    <span id="conditionIcon"></span>
-                </header>
-                
-                <div class="resposta-consulta">
+                <div class="wrapper-condicao-climatica">
                     <span id="condition"></span>
+                    <span id="conditionIcon"></span>
                 </div>
-            </div><!--.info-cards-->
+            </div>
 
-            <div class="info-cards">
-                <header class="info-cards-titulo">
-                    <p>Velocidade do vento: </p>
-                    <img src="./assets/img/speed wind.png" alt="Ícone de velocidade do vento" class="speed-wind"> 
-                </header>
-                
-                <div class="resposta-consulta">
-                    <div class="dados-consulta-wrapper">
-                        <span id="velocidade-Vento-Kmh"></span>
-                        <span id="velocidade-Vento-Mph"></span>
-                    </div>
+            <div class="detalhes-adicionais">
+                <p>Máxima:
+                    <span id="temperatura-Maxima"></span>
+                </p>
 
-                    <div class="dados-direcao-vento-wrapper">
-                        <span id="grau-Do-Vento"></span>
-                        <span id="direcao-Vento"></span>
-                    </div>
-                </div>
-            </div><!--.info-cards-->
+                <p>Mínima:
+                    <span id="temperatura-Minima"></span>
+                </p>
 
-            <!--<p>Temperatura em fahrenheit: <span id="fahrenheit"></span></p>-->
-            
-            <div class="info-cards">
-                <header class="info-cards-titulo">
-                    <p>Umidade do ar: </p>
-                    <img class="humidity-icon" src="./assets/img/humidity.png" alt="Ícone de umidade do ar">
-                </header>
-                
-                <div class="resposta-consulta">
+                <p>Umidade do ar: 
                     <span id="umidade"></span>
-            </div><!--.info-cards-->
+                </p>
+
+                <p>Sensção térmica:
+                    <span id="sensacao"></span>
+                </p>
+            </div>
+        </div>
+        
+        <p class="paragrafo-titulo">Mais detalhes de previsão neste momento</p>
+
+        <dl class="container-metricas">
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="./assets/img/icons8-fahrenheit-symbol-20.png" alt="">
+                    <span>Fahrenheit</span>
+                </dt>
+                <dd class="metrica-value" id="resultado-Temp-Fahrenheit"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="./assets/img/icons8-ponto-de-orvalho-20.png" alt="">
+                    <span>Ponto de orvalho</span>
+                </dt>
+                <dd class="metrica-value" id="ponto-orvalho"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="./assets/img/free-icons-wind-16x16.png" alt="">
+                    <span>Vento em Km/h</span>
+                </dt>
+                <dd class="metrica-value" id="velocidade-Vento-Kmh"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="" alt="">
+                    <span>Vento em mph</span>
+                </dt>
+                <dd class="metrica-value" id="velocidade-Vento-Mph"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="" alt="">
+                    <span>Direção do vento</span>
+                </dt>
+                <dd class="metrica-value" id="direcao-Vento"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="" alt="">
+                    <span>Grau do vento</span>
+                </dt>
+                <dd class="metrica-value" id="grau-Do-Vento"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="" alt="">
+                    <span>Visibilidade em Km</span>
+                </dt>
+                <dd class="metrica-value" id="visibilidade-Km"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="" alt="">
+                    <span>Visibilidade em milhas</span>
+                </dt>
+                <dd class="metrica-value" id="visibilidade-Miles"></dd>
+            </div>
+
+            <div class="metrica">
+                <dt class="metrica-label">
+                    <img src="" alt="">
+                    <span>Chuva acumulada</span>
+                </dt>
+                <dd class="metrica-value" id="precipitacao"></dd>
+            </div>
+        </dl>
+        <!--================================================================-->
+        <div class="cards-contents">
+
         </div><!--.cards-contents-->
     </div><!--.container-->
 </section>
-<!--==========================Fim section.consultar-clima========================-->
 
 <!--==========================Início section.consultar-qualidade-do-ar========================-->
 <section class="consultar-qualidade-do-ar">
@@ -113,7 +170,7 @@
         <div class="container-qualidade-do-ar">
             <div class="titulo-qualidade-do-ar">
                 <h3>Qualidade do ar</h3>
-                <p>Resultado: </p>
+                
             </div>
 
             <div class="container-card-poluente">
@@ -200,28 +257,39 @@
                     <span id="co"></span>
                 </div>
             </div><!--card-poluente-->
-            </div>
         </div>
-    </div>
+    </div><!--.container-->
 </section>
 <!--==========================Fim section.consultar-qualidade-do-ar========================-->
 
+<!--==========================Início section.previsao-em-dias========================-->
+<section class="previsao-em-dias">
+    <div class="container">
+        <p class="paragrafo-titulo">Previsão para 3 dias</p>
+        <div class="container-previsao" id="previsoes">
+            <div class="card-previsao">
+                <span id="data"></span>
+
+                <div class="previsoes" id="previsoes">
+                    
+                </div>
+            </div><!--.card-previsao-->
+        </div><!--.container-previsao-->
+    </div><!--.container-->
+</section>
+<!--==========================Fim section.previsao-em-dias========================-->
+
 <!--==========================Início do Footer========================-->
-<footer>
-    
+<footer> 
 <div class="container">
         <p>Desenvolvido com suporte da API:<a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank"> WeatherAPI.com</a></p>
 
         <!--<a href="https://www.weatherapi.com/" title="Free Weather API" target="_blank"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0"></a>-->
-
-
-        <div class="clear"></div>
-</div><!--.container-->
+    </div><!--.container-->
 </footer>
   <!--==========================Fim do Footer========================-->
 
   <script defer src="consulta.js"></script>
   <script defer src="./searchCity.js"></script>
-  <script defer src="./exibirQualidadeDoAr.js"></script>
 </body>
 </html>

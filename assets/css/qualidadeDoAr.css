@@ -1,0 +1,53 @@
+.titulo-qualidade-do-ar {
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+}
+
+.titulo-qualidade-do-ar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container-card-poluente {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-poluente {
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.poluente, .resultado-poluente {
+    width: 20%;
+}
+
+.poluente p, .resultado-poluente span {
+    font-size: 18px;
+    text-align: center;
+}
+
+.significado-poluente {
+    width: 60%;
+}
+
+.significado-poluente p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .card-poluente {
+        flex-direction: row;
+    }
+}
