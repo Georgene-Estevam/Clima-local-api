@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+div.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+:root {
+    --cor-do-header: #4A90E2;
+    --cor-da-section: #ffffff;
+    --cor-do-card: linear-gradient(390deg, #66b7ea 20%,#f57c3687 86%);
+    --cor-do-texto-card: #ffffff;
+}
+
+.cards-details, .consultar-qualidade-do-ar {
+    padding: 50px 0;
+    background-color: var(--cor-da-section);
+}
+
+.paragrafo-titulo {
+    font-size: 24px;
+    font-weight: 600;
+}

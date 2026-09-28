@@ -1,0 +1,164 @@
+.container-clima {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 10px;
+    border-radius: 16px;
+    background: var(--cor-do-card);
+    color: var(--cor-do-texto-card);
+}
+
+.clima-e-condicao {
+    margin: 50px 0;
+}
+
+.cards-details h2 {
+    font-size: 27px;
+    font-weight: normal;
+}
+
+#horario-dados-atualizado {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.container-metricas {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.metrica {
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    padding: 15px 10px;
+    background: var(--cor-do-card);
+    color: #ffffff;
+}
+
+.metrica-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.metrica dt span {
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.metrica dd {
+    font-size: 22px;
+    color: var(--cor-do-texto-card);
+}
+
+div.cards-contents {
+    margin: 40px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+div.cards-contents h2 {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.info-cards{
+    border: 1px solid #ffffff;
+    padding: 10px 15px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 6px #a7caf1;
+    background: var(--cor-do-card);
+    margin: 20px auto;
+    max-width: 320px;
+}
+
+.info-cards-titulo {
+    border-bottom: 1px solid #ffffff;
+    background: none;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor-do-texto-card);
+}
+
+.info-cards p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.resposta-consulta {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.info-cards span {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.dados-consulta-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0;
+}
+
+.dados-consulta-wrapper span {
+    border-bottom: 1px solid #ffffff;
+    text-align: left;
+}
+
+#resultado-Temp-Celsius {
+    font-size: 47px;
+    font-weight: normal;
+}
+
+#condition {
+    font-size: 16px;
+    padding: 0;
+}
+
+.wrapper-condicao-climatica {
+    display: flex;
+    align-items: center;
+}
+
+.detalhes-adicionais p {
+    padding: 8px 5px;
+    border-radius: 20px;
+    margin: 10px 0;
+    font-weight: 500;
+    max-width: 215px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);    
+}
+
+#umidade {
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 375px) {
+    .container-metricas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-metricas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-metricas {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

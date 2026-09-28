@@ -1,0 +1,77 @@
+.previsao-em-dias p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/*
+insrir com 768px
+
+.container-previsao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}*/
+
+.previsoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card-dia {
+  background: linear-gradient(135deg, #66afea 20%, #f57c3687 100%);/*#d5d6d5*/
+  border-radius: 16px;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin: 20px 0;
+}
+
+.card-dia:hover {
+  transform: translateY(-5px);
+}
+
+.card-dia h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.icone-clima {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.condicao {
+  font-size: 1.1em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.temperaturas {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.detalhes {
+  font-size: 0.95em;
+  margin-top: 15px;
+}
+
+.detalhes p {
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 8px 5px;
+}
